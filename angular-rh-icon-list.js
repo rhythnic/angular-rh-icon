@@ -1,3 +1,8 @@
+/*  Rhythnic www.rhythnic.com
+ *  angular-rh-icon-list.js
+ *  List of svg icon paths and viewports, part of angular-rh-icon on npm
+*/
+
 angular.module('rhIcon')
 
 .value('rhIconList', {

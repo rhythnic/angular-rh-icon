@@ -1,5 +1,12 @@
+/*  Rhythnic www.rhythnic.com
+ *  angular-rh-icon.js
+ *  Directives for angular-rh-icon
+*/
+
 angular.module('rhIcon', [])
 
+// This directive should be used just after the opening body tag
+// It constructs a symbol with an id for each icon
 .directive('rhSymbols', ['rhIconList', '$log',
     function (rhIconList, $log) {
         var template = ['<defs>'];
@@ -23,10 +30,12 @@ angular.module('rhIcon', [])
         };
 }])
 
+// This directive should be used wherever you want the icon to display
+// Use the directive as a attribute on an SVG tag and identify the icon with the icon attribute
 .directive('rhIcon', ['rhIconList',
     function (rhIconList) {
         return {
-            restrict: 'AC',
+            restrict: 'A',
             scope: {
                 icon: '@icon',
                 title: '@title'
