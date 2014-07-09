@@ -1,0 +1,19 @@
+{
+  "name": "angular-rh-icon",
+  "version": "0.0.0",
+  "description": "A simple collection of svg icons, inserted inline through angular directives",
+  "main": "angular-rh-icon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/rhythnic/angular-rh-icon"
+  },
+  "keywords": [
+    "angular",
+    "icon"
+  ],
+  "author": "rhythnic <nick@rhythnic.com> (http://rhythnic.com/)",
+  "license": "MIT"
+}
