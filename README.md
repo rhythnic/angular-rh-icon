@@ -1,6 +1,6 @@
 # README #
 
-angular-rh-icon is a simple collection of icons that use can use easily through the use of custom directives in angular.
+angular-rh-icon is a simple collection of icons that can be used easily through the use of custom directives in angular.
 
 ### What is this repository for? ###
 
