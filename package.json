@@ -1,19 +1,26 @@
 {
   "name": "angular-rh-icon",
   "version": "0.0.0",
-  "description": "A simple collection of svg icons, inserted inline through angular directives",
+  "description": "A simple collection of svg icons and directives for using them in angular.",
   "main": "angular-rh-icon.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/rhythnic/angular-rh-icon"
+    "url": "https://rhythnic@bitbucket.org/rhythnic/angular-rh-icon.git"
   },
   "keywords": [
     "angular",
+    "svg",
     "icon"
   ],
   "author": "rhythnic <nick@rhythnic.com> (http://rhythnic.com/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1",
+    "gulp-jshint": "^1.7.1"
+  }
 }
