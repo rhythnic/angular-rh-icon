@@ -25,13 +25,13 @@ Setup
 ### Add the file to your index.html ###
 
 <script src="angular-rh-icon/angular-rh-icon.js"></script>
- * &lt;script src="angular-rh-icon/angular-rh-icon.js"&gt;&lt;/scriptgt;
+ * &lt;script src="angular-rh-icon/angular-rh-icon.js"&gt;&lt;/script&gt;
 
 
 
 ### Add the module dependency to your angular app ###
 
- * angular.module('yourApp', [rh.icon])
+ * angular.module('yourApp', ['rh.icon'])
 
 
 
@@ -83,10 +83,15 @@ Style the icons by adding a class to the rh-icon element and setting a css rule.
       stroke-width: 2;
     }
 
+Available Icons
+---------------
+For a list and example of all available icons, please visit:
 
-* Dependencies
-  angular
-
+ * http://rhythnic.com/rh-icon
+ 
+ ### Get all available icons method ###
+ To get an array of all available icon ids, you can use the rhIconCollection service.
+  * rhIconCollection.getAvailableIconIDs()
 
 Adding Icons
 ------------
