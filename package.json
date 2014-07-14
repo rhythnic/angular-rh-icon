@@ -1,6 +1,6 @@
 {
   "name": "angular-rh-icon",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "A simple collection of svg icons and directives for using them in angular.",
   "main": "angular-rh-icon.js",
   "scripts": {

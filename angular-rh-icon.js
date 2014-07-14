@@ -1,6 +1,6 @@
 /**
  * Inline SVG icons for angular
- * version 0.0.0
+ * version 0.0.11
  * @link https://bitbucket.org/rhythnic
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
