@@ -225,4 +225,4 @@ angular.module('rh.icon', [])
         };
 }]);
     
-}());
+}(window, angular, undefined));
