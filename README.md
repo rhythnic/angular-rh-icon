@@ -8,7 +8,7 @@ visit http://rhythnic.com/rh-icon
 ### What is this repository for? ###
 
 * This repository is for a collection of icons that are intended to be used as inline SVG in angular.
-* 0.0.11
+* 0.0.12
 
 Download
 --------
