@@ -3,7 +3,7 @@
 angular-rh-icon is a simple collection of icons that can be used easily through the use of directives in angular.
 
 For better usage instructions, and to see all currently available icons,
-visit http://rhythnic.com/rh-icon
+visit http://www.rhythnic.com/#/rh-icon
 
 ### What is this repository for? ###
 
@@ -87,7 +87,7 @@ Available Icons
 ---------------
 For a list and example of all available icons, please visit:
 
- * http://rhythnic.com/rh-icon
+ * http://www.rhythnic.com/#/rh-icon
  
  ### Get all available icons method ###
  To get an array of all available icon ids, you can use the rhIconCollection service.
