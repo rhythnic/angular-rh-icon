@@ -1,34 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>viewBox getter</title>
+  <meta charset="UTF-8">
+  <title>viewBox getter</title>
 </head>
+
 <body>
-
-<p id="display-json"></p>
-
-
-<script src="raphael.js"></script>
-<script>
+  <p id="display-json"></p>
+  
+  <script src="raphael.js"></script>
+  <script>
     // Insert the icon name and path into the icons object.  Follow the example below.
-    // Load the page in the browser and copy the result into your custom icons.json file
+     // Load the page in the browser and copy the result into your custom icons.json file
     var icons = {
-        "menu": {
-            "path": "M4.082,4.083v2.999h22.835V4.083H4.082zM4.082,20.306h22.835v-2.999H4.082V20.306zM4.082,13.694h22.835v-2.999H4.082V13.694z",
-        }
-    }};
-    icons.forEach(function(icon) {
-        var box = Raphael.pathBBox(icon.path);
-        icon.x: box.x.toFixed(2);
-        icon.y: box.y.toFixed(2);
-        icon.w: String(Math.ceil(box.width));
-        icon.h: String(Math.ceil(box.height));
+      "rh-menu": {
+        "path": "M4.082,4.083v2.999h22.835V4.083H4.082zM4.082,20.306h22.835v-2.999H4.082V20.306zM4.082,13.694h22.835v-2.999H4.082V13.694z"
+      }
+    };
+    Object.keys(icons).forEach(function (key) {
+      var box = Raphael.pathBBox(icons[key].path);
+      icons[key].x = Math.floor(box.x - 2);
+      icons[key].y = Math.floor(box.y - 2);
+      icons[key].w = Math.ceil(box.width + 4);
+      icons[key].h = Math.ceil(box.height + 4);
     });
     document.getElementById('display-json').innerHTML = JSON.stringify(icons);
-</script>
+  </script>
 
 </body>
 </html>
-
-
