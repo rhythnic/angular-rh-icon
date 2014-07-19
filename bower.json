@@ -1,7 +1,7 @@
 {
   "name": "angular-rh-icon",
   "main": "angular-rh-icon.js",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "dependencies": {
     "angular": ">=1.2.18"
   },

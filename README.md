@@ -8,7 +8,7 @@ visit http://www.rhythnic.com/#/rh-icon
 ### What is this repository for? ###
 
 * This repository is for a collection of icons that are intended to be used as inline SVG in angular.
-* 0.0.12
+* 0.0.13
 
 Download
 --------
@@ -64,18 +64,18 @@ Put it wherever you would like an icon to appear.
 Specify the icon name using icon="name".
 Specify an svg title using title="title".
 
-<rh-icon icon="camera" title="Upload your image"></rh-icon>
-* &lt;rh-icon icon="camera" title="Upload your image"&gt;&lt;/rh-icon&gt;
+<rh-icon icon="rh-camera" title="Upload your image"></rh-icon>
+* &lt;rh-icon icon="rh-camera" title="Upload your image"&gt;&lt;/rh-icon&gt;
 
 This creates an svg tag with viewBox.  Inside of the svg tag there is a use tag that
 points to the symbol created by rh-def.
 
 Style the icons by adding a class to the rh-icon element and setting a css rule.
-<rh-icon class="my-icon-class" icon="camera" title="Upload your image"></rh-icon>
+<rh-icon class="my-icon-class" icon="rh-camera" title="Upload your image"></rh-icon>
 * &lt;rh-icon class="my-icon-class" icon="camera" title="Upload your image"&gt;&lt;/rh-icon&gt;
 
-(in your css file)
- * .my-icon-class {
+* (in your css file)
+* .my-icon-class {
       width: 3em;
       height: 3em;
       fill: red;
