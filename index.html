@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rhIconDemo">
+<head>
+  <meta charset="UTF-8">
+  <title>angular-rh-icon</title>
+  <style>
+    svg {
+      width: 2em;
+      height: 2em;
+      margin: .5em;
+    }
+  </style>
+</head>
+<body>
+ <rh-def></rh-def>
+ <div ng-controller="mainCtrl">
+   <rh-icon ng-repeat="icon in icons" icon="{{icon}}" title="{{icon}}"></rh-icon>
+ </div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+  <script src="angular-rh-icon.js"></script>
+  <script>
+    angular.module('rhIconDemo', ['rh.icon'])
+    .config(function(rhIconCollectionProvider) {
+      rhIconCollectionProvider.setFilePath('icons.min.json');
+    })
+    .controller('mainCtrl', function($scope, rhIconCollection, $log) {
+        rhIconCollection.getAvailableIconIDs()
+        .then(function(res){
+          $scope.icons = res;
+        });
+    });
+  </script>
+</body>
+</html>
