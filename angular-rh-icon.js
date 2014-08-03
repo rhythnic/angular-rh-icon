@@ -71,28 +71,30 @@
     this.$get = ['$http',
       function rhIconCollectionFactory($http) {
         var icons = {},
-          promise = $http({
-            method: 'GET',
-            url: filePath,
-            cache: true
-          });
+            iconIDs = [],
+            promise = $http({
+              method: 'GET',
+              url: filePath,
+              cache: true
+            });
 
         return {
-          iconIDs: [],
           registerIcon: function (iconID) {
-            var self = this;
             return promise.then(function (res) {
               if (!(iconID in icons)) {
                 var icon = res.data[iconID];
                 icons[iconID] = icon;
                 icons[iconID].viewBox = [icon.x, icon.y, icon.w, icon.h].join(' ');
-                self.iconIDs.push(iconID);
+                iconIDs.push(iconID);
               }
               return icons[iconID];
             });
           },
           getIcons: function () {
             return icons;
+          },
+          getIconIDs: function() {
+            return iconIDs;
           },
           getAvailableIconIDs: function () {
             return promise.then(function (res) {
@@ -177,7 +179,7 @@
       scope: {},
       controller: ['$scope', 'rhIconCollection',
         function ($scope, rhIconCollection) {
-          $scope.iconIDs = rhIconCollection.iconIDs;
+          $scope.iconIDs = rhIconCollection.getIconIDs();
           $scope.$watch('iconIDs', function (oldVal, newVal) {
             $scope.icons = rhIconCollection.getIcons();
           });
