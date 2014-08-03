@@ -1,6 +1,6 @@
 {
   "name": "angular-rh-icon",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A simple collection of svg icons and directives for using them in angular.",
   "main": "angular-rh-icon.js",
   "scripts": {
@@ -19,8 +19,9 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.6",
+    "gulp-jshint": "^1.7.1",
+    "gulp-jsonminify": "0.0.1",
     "gulp-rename": "^1.2.0",
-    "gulp-uglify": "^0.3.1",
-    "gulp-jshint": "^1.7.1"
+    "gulp-uglify": "^0.3.1"
   }
 }
